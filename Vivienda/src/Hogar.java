@@ -16,13 +16,7 @@ public class Hogar {
     public static void main(String[] args) {
         Vivienda casa1 = new Vivienda(120000);
         
-        double precio;
-        int numHabitaciones;
-        double superficie;
-        boolean parking;
-        String estado;
-        String propietario;
-       
+        
     }
     
 }

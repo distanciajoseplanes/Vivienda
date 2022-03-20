@@ -6,6 +6,7 @@
 
 /**
  *
+ * @version 1.1
  * @author Paqui Elena
  */
 public class Vivienda 
@@ -16,6 +17,15 @@ public class Vivienda
     private boolean parking;
     private String estado;
     private String propietario;
+
+    /**
+     *
+     * @param p precio de la vivienda
+     * @param nh numero de habitaciones
+     * @param estado estado de la casa
+     * @param propietario propietario actual
+     * @param parking si tiene parking o no
+     */
     public Vivienda(double p, int nh,String estado,String propietario, boolean parking){
     this.precio = p;
     this.numHabitaciones = nh;
@@ -23,6 +33,11 @@ public class Vivienda
     this.propietario = propietario;
     this.parking = parking;
 }
+
+    /**
+     *
+     * @param casa devuelve lod datos
+     */
     public void imprimirVivienda(Vivienda casa){
     System.out.println("Precio: " + casa.getPrecio());
         System.out.println("Número de habitaciones: "+ casa.getNumHabitaciones());
@@ -31,11 +46,20 @@ public class Vivienda
         System.out.println("Estado: "+ casa.getEstado());
         System.out.println("Propietario: "+ casa.getPropietario());    
     }
+
+    /**
+     *
+     * @param precio
+     */
     public Vivienda (double precio)
     {
         this.precio = precio;
     }
     
+    /**
+     *
+     * @param descuento crea un descuento
+     */
     public void actualizarPrecio(Vivienda descuento)
     {
         setPrecio(getPrecio() - getPrecio() * 0.05);
