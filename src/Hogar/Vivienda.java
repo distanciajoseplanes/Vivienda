@@ -117,7 +117,6 @@ public class Vivienda {
     public void setPropietario(String propietario) {
         this.propietario = propietario;
     }
-    
         
     public void actualizarPrecio(double descuento)
     {
