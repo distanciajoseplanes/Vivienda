@@ -36,12 +36,6 @@ public class Vivienda {
         setPrecio(getPrecio() - getPrecio() * descuento);
     }
     
-    
-//    public void actualizarPrecio()
-//    {
-//        setPrecio(getPrecio() - getPrecio() * 0.05);
-//    }
-    
 
     /**
      * @return the precio
