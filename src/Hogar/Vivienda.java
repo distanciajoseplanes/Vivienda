@@ -32,7 +32,7 @@ public class Vivienda {
 
     /**
      *
-     * @param precio asd
+     * @param precio asds
      */
     public void setPrecio(double precio) {
         this.precio = precio;
