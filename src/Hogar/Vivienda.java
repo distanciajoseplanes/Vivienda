@@ -33,12 +33,12 @@ public class Vivienda {
     }
 /**
  * 
- * @param precio
- * @param numHabitaciones
- * @param superficie
- * @param parking
- * @param estado
- * @param propietario 
+ * @param precio Precio
+ * @param numHabitaciones Nº de habitaciones
+ * @param superficie Superficie
+ * @param parking Aparcamiento
+ * @param estado Estado
+ * @param propietario Propietario
  */
     public Vivienda(double precio, int numHabitaciones, double superficie, boolean parking, String estado, String propietario) {
         this.precio = precio;
@@ -49,8 +49,8 @@ public class Vivienda {
         this.propietario = propietario;
     }
  /**
-  * Actualiza el precio de la vivienda aplicando un descuento dado en porcentaje.
-  * @param porcentaje de descuento a aplicar.
+  * 
+  * @param descuento Actualiza el precio de la vivienda aplicando un descuento dado en porcentaje.
   */
     public void actualizarPrecio(double descuento)
     {
