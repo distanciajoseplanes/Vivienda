@@ -5,17 +5,21 @@
  */
 
 
-
-
 package Hogar;
 
 /**
  *
- * @author paqui
+ * @author Refatorización y documentación realizada por Emilio
+ * 
+ * Representa una vivienda con un precio, un número de habitaciones, una superficie,
+ * información sobre el parking, el estado de la vivienda y el propietario
  */
 
 public class Vivienda {
     
+/**
+ * Atributos de la clase Vivienda
+ */
     double precio;
     private int numHabitaciones;
     private double superficie;
@@ -27,7 +31,15 @@ public class Vivienda {
     {
         this.precio = precio;
     }
-
+/**
+ * 
+ * @param precio
+ * @param numHabitaciones
+ * @param superficie
+ * @param parking
+ * @param estado
+ * @param propietario 
+ */
     public Vivienda(double precio, int numHabitaciones, double superficie, boolean parking, String estado, String propietario) {
         this.precio = precio;
         this.numHabitaciones = numHabitaciones;
@@ -36,7 +48,10 @@ public class Vivienda {
         this.estado = estado;
         this.propietario = propietario;
     }
-    
+ /**
+  * Actualiza el precio de la vivienda aplicando un descuento dado en porcentaje.
+  * @param porcentaje de descuento a aplicar.
+  */
     public void actualizarPrecio(double descuento)
     {
         setPrecio(getPrecio() - getPrecio() * (descuento / 100));
