@@ -4,7 +4,6 @@
  * and open the template in the editor.
  */
 
-
 package Hogar;
 
 /**
@@ -14,6 +13,7 @@ package Hogar;
  * Representa una vivienda con un precio, un número de habitaciones, una superficie,
  * información sobre el parking, el estado de la vivienda y el propietario
  */
+
 
 public class Vivienda {
     
