@@ -27,6 +27,10 @@ public class Hogar {
         imprimirVivienda(casa1);
     }
 
+    /**
+     * recibe un objeto de la clase Vivienda por parámetro e imprime sus campos
+     * @param casa1
+     */
     public static void imprimirVivienda(Vivienda casa1) {
         System.out.println("Precio: " + casa1.getPrecio());
         System.out.println("Número de habitaciones: "+ casa1.getNumHabitaciones());

@@ -6,24 +6,65 @@
 package Hogar;
 
 /**
- *
+ * Clase que recoge las propiedades de una Vivienda
  * @author paqui
+ * modificado por Alfonso José Sánchez Costa
+ * @version 1.0
  */
 public class Vivienda {
     
+    /**
+     * Atributos de la clase Vivienda
+     * */
+
+    /**
+     * Precio de la vivienda
+     */
     private double precio;
+    
+    /**
+     * Número de habitaciones de la vivienda
+     */
     private int numHabitaciones;
+    
+    /**
+     * Superficie en m2 de la vivienda
+     */
     private double superficie;
+    
+    /**
+     * True si la vivienda tiene parking y false si no
+     */
     private boolean parking;
+    
+    /**
+     * Indica el estado de la vivienda
+     */
     private String estado;
+    
+    /**
+     * Propietario actual de la vivienda
+     */
     private String propietario;
     
-    
+    /**
+     * Constructor que inicializa el atributo precio de la clase Vivienda
+     * @param precio
+     */
     public Vivienda (double precio)
     {
         this.precio = precio;
     }
 
+    /**
+     * Constructor que inicializa todos los parámetros de la clase Vivienda
+     * @param precio
+     * @param numHabitaciones
+     * @param superficie
+     * @param parking
+     * @param estado
+     * @param propietario
+     */
     public Vivienda(double precio, int numHabitaciones, double superficie, boolean parking, String estado, String propietario) {
         this.precio = precio;
         this.numHabitaciones = numHabitaciones;
@@ -35,89 +76,105 @@ public class Vivienda {
     
 
     /**
-     * @return the precio
+     * devuelve el precio
+     * @return precio
      */
     public double getPrecio() {
         return precio;
     }
 
     /**
-     * @return the numHabitaciones
+     * devuelve el número de habitaciones
+     * @return numHabitaciones
      */
     public int getNumHabitaciones() {
         return numHabitaciones;
     }
 
     /**
-     * @return the superficie
+     * devuelve la superficie de la vivienda
+     * @return superficie
      */
     public double getSuperficie() {
         return superficie;
     }
 
     /**
-     * @return the parking
+     * devuelve true si tiene parking y false si no
+     * @return parking
      */
     public boolean isParking() {
         return parking;
     }
 
     /**
-     * @return the estado
+     * devuelve el estado de la vivienda
+     * @return estado
      */
     public String getEstado() {
         return estado;
     }
 
     /**
-     * @return the propietario
+     * devuelve el nombre del propietario de la vivienda
+     * @return propietario
      */
     public String getPropietario() {
         return propietario;
     }
 
     /**
-     * @param precio the precio to set
+     * establece el precio
+     * @param precio
      */
     public void setPrecio(double precio) {
         this.precio = precio;
     }
 
     /**
-     * @param numHabitaciones the numHabitaciones to set
+     * establece el número de habitaciones
+     * @param numHabitaciones 
      */
     public void setNumHabitaciones(int numHabitaciones) {
         this.numHabitaciones = numHabitaciones;
     }
 
     /**
-     * @param superficie the superficie to set
+     * establece la superficie
+     * @param superficie 
      */
     public void setSuperficie(double superficie) {
         this.superficie = superficie;
     }
 
     /**
-     * @param parking the parking to set
+     * establece si tiene o no parking
+     * @param parking 
      */
     public void setParking(boolean parking) {
         this.parking = parking;
     }
 
     /**
-     * @param estado the estado to set
+     * establece el estado de la casa
+     * @param estado 
      */
     public void setEstado(String estado) {
         this.estado = estado;
     }
 
     /**
-     * @param propietario the propietario to set
+     * establece el nombre del propietario de la casa
+     * @param propietario 
      */
     public void setPropietario(String propietario) {
         this.propietario = propietario;
     }
         
+    /**
+     * Actualiza el precio de la vivienda al aplicarle un descuento
+     * @param descuento descuento a alicar sobre el precio
+     */
     public void actualizarPrecio(double descuento)
     {
         setPrecio(getPrecio() - getPrecio() * descuento);
