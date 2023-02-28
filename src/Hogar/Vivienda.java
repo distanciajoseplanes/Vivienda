@@ -18,11 +18,25 @@ public class Vivienda {
     private String estado;
     private String propietario;
     
+  /**
+   * Constructor de la clase Vivienda solo con parametro precio
+   * 
+   * @param precio 
+   */  
     public Vivienda (double precio)
     {
         this.precio = precio;
     }
-
+/**
+ * Constructor de la clase Vivienda con todos los parámetros de la clase
+ * 
+ * @param precio
+ * @param numHabitaciones
+ * @param superficie
+ * @param parking
+ * @param estado
+ * @param propietario 
+ */
     public Vivienda(double precio, int numHabitaciones, double superficie, boolean parking, String estado, String propietario) {
         this.precio = precio;
         this.numHabitaciones = numHabitaciones;
@@ -31,7 +45,11 @@ public class Vivienda {
         this.estado = estado;
         this.propietario = propietario;
     }
-    
+    /**
+     * Método para calcular un precio en base a un descuento
+     * 
+     * @param descuento 
+     */
     public void actualizarPrecio(double descuento)
     {
         setPrecio(getPrecio() - getPrecio() * descuento);
