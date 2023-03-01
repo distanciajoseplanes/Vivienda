@@ -6,29 +6,71 @@
 package Hogar;
 
 /**
- *
- * @author paqui
+ * <h2> Clase Vivienda, se utiliza para crear y leer atributos de una Vivienda </h2>
+ * 
+ * @author Konrad Wojcik
+ * @version 1.0
+ * @since 1.0 
  */
 public class Vivienda {
-    
-    
+    /**
+     * Atributo nombre de Vivienda. Tipo Cadena
+     */
+   
     
     private double precio;
+    /**
+     * Atributo precio de Vivienda. Tipo double
+     */
     private int numHabitaciones;
+    /**
+     * Atributo numero de habitaciones de Vivienda. Tipo int
+     */
     private double superficie;
+    /**
+     * Atributo superficie de Vivienda. Tipo double
+     */
     private boolean parking;
+    /**
+     * Atributo parking de Vivienda. Tipo boolean
+     */
     private String estado;
+    /**
+     * Atributo estado de Vivienda. Tipo cadena
+     */
     private String propietario;
+    /**
+     * Atributo propietario de Vivienda. Tipo cadena
+     */
     
     public Vivienda (double precio)
     {
         this(precio, 1, 1, false, null, null);
     }
+    /**
+     * Constructor con 6 parametros
+     * Crea objetos Vivienda con precio, numHabitaciones, superficie, parking, estado y propietario
+     * @param precio
+     * @param numHabitaciones
+     * @param superficie
+     * @param parking
+     * @param estado
+     * @param propietario 
+     */
 
     public Vivienda(double precio, int numHabitaciones, double superficie, boolean parking, String estado, String propietario) {
         this.precio = precio;
+        this.numHabitaciones = numHabitaciones;
+        this.superficie = superficie;
+        this.parking = parking;
+        this.estado = estado;
+        this.propietario = propietario;
     }
     
+    /**
+     * Este metodo actualiza el precio de la Vivienda
+     * @param descuento 
+     */
     
     
     public void actualizarPrecio(double descuento)
