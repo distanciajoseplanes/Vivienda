@@ -7,34 +7,34 @@ package Hogar;
 
 /**
  *
- * @author paqui
+ * @author antes paqui ahora jose paredes
  */
 public class Vivienda {
 
     /**
-     * @return the precio
+     * 
+     * 
+     * @return Precio de la vivienda
      */
     public double getPrecio() {
         return precio;
     }
 
     /**
-     * @param precio the precio to set
+     * @param precio precio para particulares
      */
     public void setPrecio(double precio) {
         this.precio = precio;
     }
 
     /**
-     * @return the numHabitaciones
+     * @return Dime las habitaciones de la casa
      */
     public int getNumHabitaciones() {
         return numHabitaciones;
     }
 
-    /**
-     * @param numHabitaciones the numHabitaciones to set
-     */
+
     public void setNumHabitaciones(int numHabitaciones) {
         this.numHabitaciones = numHabitaciones;
     }
