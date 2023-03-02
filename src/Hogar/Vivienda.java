@@ -12,15 +12,15 @@ package Hogar;
 public class Vivienda {
     
     /* Hacemos los atributos privados */
-    private double precio;
-    private int numHabitaciones;
-    private double superficie;
-    private boolean parking;
-    private String estado;
-    private String propietario;
+    double precio;
+    int numHabitaciones;
+    double superficie;
+    boolean parking;
+    String estado;
+    String propietario;
     
     /* Constructor */
-    public Vivienda(double precio, int numHabitaciones, double superficie, boolean parking, String estado, String propietario) {
+    public Vivienda(double precio, int numHabitaciones, double superficie, boolean parking, String perfecto, String rafael) {
       this.precio = precio;
       this.numHabitaciones = numHabitaciones;
       this.superficie = superficie;
@@ -34,7 +34,7 @@ public class Vivienda {
       this.precio = precio;
     }
 
-    public void getPrecio() {
+    public double getPrecio() {
       return precio;
     }
 
@@ -42,7 +42,7 @@ public class Vivienda {
       this.numHabitaciones = numHabitaciones;
     }
 
-    public void getNumHabitaciones() {
+    public int getNumHabitaciones() {
       return numHabitaciones;
     }
 
@@ -50,7 +50,7 @@ public class Vivienda {
       this.superficie = superficie;
     }
 
-    public void getSuperficie() {
+    public double getSuperficie() {
       return superficie;
     }
 
@@ -58,7 +58,7 @@ public class Vivienda {
       this.parking = parking;
     }
 
-    public void getParking() {
+    public boolean getParking() {
       return parking;
     }
 
@@ -66,7 +66,7 @@ public class Vivienda {
       this.estado = estado;
     }
 
-    public void getEstado() {
+    public String getEstado() {
       return estado;
     }
 
@@ -74,7 +74,7 @@ public class Vivienda {
       this.propietario = propietario;
     }
 
-    public void getPropietario() {
+    public String getPropietario() {
       return propietario;
     }
 
