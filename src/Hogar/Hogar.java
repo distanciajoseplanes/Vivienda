@@ -17,13 +17,6 @@ public class Hogar {
     public static void main(String[] args) {
         Vivienda casa1 = new Vivienda(120000, 2, 800, false, "Perfecto", "Rafael");
         
-        double precio;
-        int numHabitaciones;
-        double superficie;
-        boolean parking;
-        String estado;
-        String propietario;
-        
         imprimirVivienda(casa1);
   }
   public static void imprimirVivienda(Vivienda casa1) {

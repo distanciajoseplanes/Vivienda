@@ -20,7 +20,7 @@ public class Vivienda {
     String propietario;
     
     /* Constructor */
-    public Vivienda(double precio, int numHabitaciones, double superficie, boolean parking, String perfecto, String rafael) {
+    public Vivienda(double precio, int numHabitaciones, double superficie, boolean parking, String estado, String propietario) {
       this.precio = precio;
       this.numHabitaciones = numHabitaciones;
       this.superficie = superficie;
