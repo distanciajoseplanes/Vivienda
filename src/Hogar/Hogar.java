@@ -21,6 +21,9 @@ public class Hogar {
         imprimirVivienda();
     }
     
+    /**
+     *
+     */
     public static void imprimirVivienda()
     {
     Vivienda casa1 = new Vivienda(120000);
