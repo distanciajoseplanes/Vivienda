@@ -9,6 +9,7 @@ package Hogar;
  *
  * @author paqui
  */
+/**constructor de variables del método*/
 public class Vivienda {
 
     public Vivienda(double precio, int numHabitaciones, double superficie, boolean parking, String estado, String propietario) {
@@ -115,7 +116,7 @@ public class Vivienda {
     {
         this.precio = precio;
     }
-    
+    /**método para realizar descuentos*/
     public void actualizarPrecio(double descuento)
     {
         setPrecio(getPrecio() - getPrecio() * descuento);
