@@ -29,7 +29,7 @@ public class Hogar {
         
         casa1.imprimirVivienda();
         
-
+        System.out.println("El estado es igual a"+casa1.getEstado());
     }
 }
     
