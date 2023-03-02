@@ -11,6 +11,7 @@ package Hogar;
  */
 public class Vivienda {
     
+    /* Hacemos los atributos privados */
     double precio;
     int numHabitaciones;
     double superficie;
@@ -18,14 +19,69 @@ public class Vivienda {
     String estado;
     String propietario;
     
-    public Vivienda (double precio)
-    {
-        this.precio = precio;
+    /* Constructor */
+    public Vivienda(double precio, int numHabitaciones, double superficie, boolean parking, String estado, String propietario) {
+      this.precio = precio;
+      this.numHabitaciones = numHabitaciones;
+      this.superficie = superficie;
+      this.parking = parking;
+      this.estado = estado;
+      this.propietario = propietario;
     }
-    
-    public void actualizarPrecio()
-    {
-        precio = precio - precio * 0.05;
+
+    /* Getters y Setters */
+    public void setPrecio(double precio){
+      this.precio = precio;
     }
-    
+
+    public double getPrecio() {
+      return precio;
+    }
+
+    public void setNumHabitaciones(int numHabitaciones){
+      this.numHabitaciones = numHabitaciones;
+    }
+
+    public int getNumHabitaciones() {
+      return numHabitaciones;
+    }
+
+    public void setSuperficie(double superficie){
+      this.superficie = superficie;
+    }
+
+    public double getSuperficie() {
+      return superficie;
+    }
+
+    public void setParking(boolean parking){
+      this.parking = parking;
+    }
+
+    public boolean getParking() {
+      return parking;
+    }
+
+    public void setEstado(String estado){
+      this.estado = estado;
+    }
+
+    public String getEstado() {
+      return estado;
+    }
+
+    public void setPropietario(String propietario){
+      this.propietario = propietario;
+    }
+
+    public String getPropietario() {
+      return propietario;
+    }
+
+    /* actualiza el precio multiplicando por un descuento */ 
+    /* descuento debe tener un valor como "0.05" para un 5% de descuento */
+    public void actualizarPrecio(float descuento)
+    {
+        setPrecio(getPrecio() - getPrecio() * descuento);
+    }
 }
