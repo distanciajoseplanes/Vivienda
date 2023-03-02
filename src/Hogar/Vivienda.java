@@ -18,6 +18,15 @@ public class Vivienda {
     private String estado;
     private String propietario;
     
+    /**
+     *
+     * @param precio
+     * @param numHabitaciones
+     * @param superficie
+     * @param parking
+     * @param estado
+     * @param propietario
+     */
     public Vivienda(double precio, int numHabitaciones, double superficie,boolean parking, String estado, String propietario)
     {
         this.precio = precio;
@@ -28,73 +37,137 @@ public class Vivienda {
         this.propietario = propietario;
     }
     
-    
-    
+    /**
+     *
+     * @param precio
+     */
     public Vivienda (double precio)
     {
         this.precio = precio;
     }
     
+    /**
+     *
+     * @param descuento
+     */
     public void actualizarPrecio(double descuento)
     {
-        precio = precio - precio * descuento;
+        setPrecio(getPrecio() - getPrecio() * descuento);
     }
     
+    /**
+     *
+     */
     public void imprimirVivienda()
     {
-        System.out.println("Precio: " + this.precio);
-        System.out.println("Número de habitaciones: "+ this.numHabitaciones);
-        System.out.println("Superficie en m2: " + this.superficie);
-        System.out.println("¿Dispone de parking?: " + this.parking);
-        System.out.println("Estado: "+ this.estado);
-        System.out.println("Propietario: "+ this.propietario);
+        System.out.println("Precio: " + this.getPrecio());
+        System.out.println("Número de habitaciones: "+ this.getNumHabitaciones());
+        System.out.println("Superficie en m2: " + this.getSuperficie());
+        System.out.println("¿Dispone de parking?: " + this.isParking());
+        System.out.println("Estado: "+ this.getEstado());
+        System.out.println("Propietario: "+ this.getPropietario());
     }
     
+    /**
+     *
+     * @return
+     */
     public double getPrecio(){
         return precio;
     }
     
+    /**
+     *
+     * @param precio
+     */
     public void setPrecio(double precio) {
         this.precio = precio;
     }
     
+    /**
+     *
+     * @return
+     */
     public int getNumHabitaciones(){
         return numHabitaciones;
     }
     
+    /**
+     *
+     * @param numHabitaciones
+     */
     public void setNumHabitaciones(int numHabitaciones) {
         this.numHabitaciones = numHabitaciones;
     }
     
+    /**
+     *
+     * @return
+     */
     public double getSuperficie(){
         return superficie;
     }
     
+    /**
+     *
+     * @param superficie
+     */
     public void setSuperficie(double superficie) {
         this.superficie = superficie;
     }
     
+    /**
+     *
+     * @return
+     */
     public boolean getParking(){
-        return parking;
+        return isParking();
     }
     
+    /**
+     *
+     * @param parking
+     */
     public void setParking(boolean parking) {
         this.parking = parking;
     }   
 
+    /**
+     *
+     * @return
+     */
     public String getEstado(){
         return estado;
     }
     
+    /**
+     *
+     * @param estado
+     */
     public void setEstado(String estado) {
         this.estado = estado;
     }  
 
+    /**
+     *
+     * @return
+     */
     public String getPropietario(){
         return propietario;
     }
     
+    /**
+     *
+     * @param propietario
+     */
     public void setPropietario(String propietario) {
         this.propietario = propietario;
     }           
+
+    /**
+     * @return the parking
+     */
+    public boolean isParking() {
+        return parking;
+    }
 }
