@@ -9,8 +9,14 @@ package Hogar;
  *
  * @author paqui
  */
-public class Vivienda {
 
+
+/**
+ * La clase Vivienda representa una vivienda.
+ */
+public class Vivienda {
+    
+    /** Getters y Setters */
     /**
      * @return the precio
      */
@@ -94,7 +100,19 @@ public class Vivienda {
     public void setPropietario(String propietario) {
         this.propietario = propietario;
     }
-
+    
+    /**
+     * Constructor que inicializa la clase vivienda con sus atributos:
+     * 
+     * @param precio           Precio de la vivienda.
+     * @param parking          Si la vivienda tiene parking o no.
+     * @param numHabitaciones  Número de habitaciones de la vivienda.
+     * @param superficie       Superficie de la vivienda.
+     * @param estado           Estado de la vivienda.
+     * @param propietario      El nombre del propietario de la vivienda.
+     */
+    
+    
     public Vivienda(double precio, int numHabitaciones, double superficie, boolean parking, String estado, String propietario) {
         this.precio = precio;
         this.numHabitaciones = numHabitaciones;
@@ -103,6 +121,10 @@ public class Vivienda {
         this.estado = estado;
         this.propietario = propietario;
     }
+    /**
+     * Atributos de la vivienda.
+     * 
+     */
     
     private double precio;
     private int numHabitaciones;
@@ -111,11 +133,21 @@ public class Vivienda {
     private String estado;
     private String propietario;
     
+    
+    /**
+    Método que inicia la clase Vivienda pero solo introduciendo el precio de la misma.
+    @param precio el precio de la vivienda.
+    */
     public Vivienda (double precio)
     {
         this.precio = precio;
     }
     
+    
+    /**
+    Método que actualiza el precio de la vivienda restando un porcentaje de descuento como argumento.
+    @param descuento El porcentaje de descuento a aplicar sobre el precio actual de la vivienda
+    */
     public void actualizarPrecio(double descuento)
     {
         setPrecio(getPrecio() - getPrecio() * descuento);
