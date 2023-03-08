@@ -6,8 +6,9 @@
 package Hogar;
 
 /**
- *
- * @author paqui
+ *  <H2> Documentacion de la clase Hogar.java </h2>
+ * @author Francisco Javier Montiel Noguera
+ * @version 1.1
  */
 public class Hogar {
 
@@ -16,14 +17,7 @@ public class Hogar {
      */
     public static void main(String[] args) {
         Vivienda casa1 = new Vivienda(120000);
-        
-        double precio;
-        int numHabitaciones;
-        double superficie;
-        boolean parking;
-        String estado;
-        String propietario;
-        
+                
         imprimirVivienda(casa1);
     }
 
