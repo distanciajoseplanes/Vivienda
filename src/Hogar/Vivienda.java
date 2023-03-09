@@ -7,10 +7,12 @@ package Hogar;
 
 /**
  *
- * @author paqui
+ * @author Yonattan
+ * @version 1
+ * 
  */
 public class Vivienda {
-    
+   
     private double precio;
     private int numHabitaciones;
     private double superficie;
@@ -18,6 +20,15 @@ public class Vivienda {
     private String estado;
     private String propietario;
 
+    /**
+     * 
+     * @param precio precio de la vivienda
+     * @param numHabitaciones habitaciones de la vivienda
+     * @param superficie expresada en metros cuadrados
+     * @param parking dispone de parking (true) no dispone (false)
+     * @param estado nuevo o usado
+     * @param propietario nombre del vendedor
+     */
     public Vivienda(double precio, int numHabitaciones, double superficie, boolean parking, String estado, String propietario) {
         this.precio = precio;
         this.numHabitaciones = numHabitaciones;
@@ -33,7 +44,10 @@ public class Vivienda {
     {
         this.precio = precio;
     }
-    
+    /**
+     * 
+     * @param descuento descueto pasado por parametro
+     */
     public void actualizarPrecio(double descuento)
     {
         setPrecio(getPrecio() - getPrecio() * descuento);
