@@ -1,18 +1,15 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package Hogar;
 
 /**
  *
- * @author paqui
+ * @author nadia franco
  */
 public class Hogar {
 
     /**
-     * @param args the command line arguments
+     * @param args en la clase Hogar se declara inicializa e imprime 
+     * todo lo referente al objeto vivienda
      */
     public static void main(String[] args) {
         Vivienda casa1 = new Vivienda(120000);

@@ -1,95 +1,94 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package Hogar;
 
 /**
  *
- * @author paqui
+ * @author nadia franco
+ * En la clase Vivienda se contienen dos constructores, el primero requiere todos los parametros de entrada
+ *  y el segundo solo pide el precio, ademas se han añadido los metodos getter y setter 
+ *  para todas las variables de la clase.
  */
 public class Vivienda {
 
     /**
-     * @return the precio
+     * @return obtener el precio actual
      */
     public double getPrecio() {
         return precio;
     }
 
     /**
-     * @param precio the precio to set
+     * @param precio poner un precio como parametro de entrada
      */
     public void setPrecio(double precio) {
         this.precio = precio;
     }
 
     /**
-     * @return the numHabitaciones
+     * @return obtener el numero de habitaciones
      */
     public int getNumHabitaciones() {
         return numHabitaciones;
     }
 
     /**
-     * @param numHabitaciones the numHabitaciones to set
+     * @param numHabitaciones introducir el numero de habitaciones
      */
     public void setNumHabitaciones(int numHabitaciones) {
         this.numHabitaciones = numHabitaciones;
     }
 
     /**
-     * @return the superficie
+     * @return obtener la superficie
      */
     public double getSuperficie() {
         return superficie;
     }
 
     /**
-     * @param superficie the superficie to set
+     * @param superficie introducir la superficie
      */
     public void setSuperficie(double superficie) {
         this.superficie = superficie;
     }
 
     /**
-     * @return the parking
+     * @return obtener la existencia de parking
      */
     public boolean isParking() {
         return parking;
     }
 
     /**
-     * @param parking the parking to set
+     * @param parking introducir si existe parking
      */
     public void setParking(boolean parking) {
         this.parking = parking;
     }
 
     /**
-     * @return the estado
+     * @return obtener el estado
      */
     public String getEstado() {
         return estado;
     }
 
     /**
-     * @param estado the estado to set
+     * @param estado introducir el estado
      */
     public void setEstado(String estado) {
         this.estado = estado;
     }
 
     /**
-     * @return the propietario
+     * @return obtener el propietario
      */
     public String getPropietario() {
         return propietario;
     }
 
     /**
-     * @param propietario the propietario to set
+     * @param propietario introducir quien es el propietario
      */
     public void setPropietario(String propietario) {
         this.propietario = propietario;
