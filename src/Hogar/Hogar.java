@@ -1,21 +1,18 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package Hogar;
 
 /**
  *
- * @author paqui
+ * @author nadia franco
  */
 public class Hogar {
 
     /**
-     * @param args the command line arguments
+     * @param args en la clase Hogar se declara inicializa e imprime 
+     * todo lo referente al objeto vivienda
      */
     public static void main(String[] args) {
-        Vivienda v = new Vivienda(120000);
+        Vivienda casa1 = new Vivienda(120000);
         
         double precio;
         int numHabitaciones;
@@ -24,12 +21,17 @@ public class Hogar {
         String estado;
         String propietario;
         
-        System.out.println("Precio: " + v.precio);
-        System.out.println("Número de habitaciones: "+ v.numHabitaciones);
-        System.out.println("Superficie en m2: " + v.superficie);
-        System.out.println("¿Dispone de parking?: " + v.parking);
-        System.out.println("Estado: "+ v.estado);
-        System.out.println("Propietario: "+ v.propietario);
+        
+        imprimirVivienda(casa1);
+    }
+
+    public static void imprimirVivienda(Vivienda casa1) {
+        System.out.println("Precio: " + casa1.getPrecio());
+        System.out.println("Número de habitaciones: "+ casa1.getNumHabitaciones());
+        System.out.println("Superficie en m2: " + casa1.getSuperficie());
+        System.out.println("¿Dispone de parking?: " + casa1.isParking());
+        System.out.println("Estado: "+ casa1.getEstado());
+        System.out.println("Propietario: "+ casa1.getPropietario());
     }
     
 }
