@@ -6,8 +6,7 @@
 package Hogar;
 
 /**
- *
- * @author paqui
+ * Clase que representa una vivienda.
  */
 public class Vivienda {
     
@@ -17,55 +16,113 @@ public class Vivienda {
     private boolean parking;
     private String estado;
     private String propietario;
-
+    /**
+   * Obtiene el precio de la vivienda.
+   *
+   * @return El precio de la vivienda.
+   */
     public double getPrecio() {
         return precio;
     }
-
+    /**
+   * Establece el precio la vivienda.
+   *
+   * @param precio El precio de la vivienda.
+   */
     public void setPrecio(double precio) {
         this.precio = precio;
     }
-
+    /**
+   * Obtiene el numero de habitaciones de la vivienda.
+   *
+   * @return El numero de habitaciones de la vivienda.
+   */
     public int getNumHabitaciones() {
         return numHabitaciones;
     }
-
+    /**
+   * Establece el número de habitaciones de la vivienda.
+   *
+   * @param numHabitaciones El nuevo número de habitaciones de la vivienda.
+   */
     public void setNumHabitaciones(int numHabitaciones) {
         this.numHabitaciones = numHabitaciones;
     }
-
+    /**
+   * Obtiene la superficie de la vivienda.
+   *
+   * @return La superfice de la vivienda.
+   */
     public double getSuperficie() {
         return superficie;
     }
-
+    /**
+   * Establece la superficie de la vivienda.
+   *
+   * @param superficio La superfice de la vivienda.
+   */
     public void setSuperficie(double superficie) {
         this.superficie = superficie;
     }
-
+    /**
+   * Obtiene si tiene parking o no la vivienda.
+   *
+   * @return Si tiene parking o no la vivienda.
+   */
     public boolean isParking() {
         return parking;
     }
-
+  
+    /**
+   * Establece si tiene parking o no la vivienda.
+   *
+   * @param parking Si tiene parking o no la vivienda.
+   */
     public void setParking(boolean parking) {
         this.parking = parking;
     }
-
+     /**
+   * Obtiene el estado de la vivienda.
+   *
+   * @return El estado de la vivienda.
+   */
     public String getEstado() {
         return estado;
     }
-
+      /**
+   * Establece el estado de la vivienda.
+   *
+   * @param estado El estado de la vivienda.
+   */
     public void setEstado(String estado) {
         this.estado = estado;
     }
-
+     /**
+   * Obtiene el propietario de la vivienda.
+   *
+   * @return El propietario de la vivienda.
+   */
     public String getPropietario() {
         return propietario;
     }
-
+     /**
+   * Establece el propietario de la vivienda.
+   *
+   * @param propietario El propietario de la vivienda.
+   */
     public void setPropietario(String propietario) {
         this.propietario = propietario;
     }
-
+/**
+   * Constructor de la clase Vivienda.
+   *
+   * @param superficie La superficie de la vivienda.
+   * @param numHabitaciones El número de habitaciones de la vivienda.
+   * @param precio El precio de la vivienda.
+   * @param parking El parking de la vivienda.
+   * @param estado El estado de la vivienda.
+   * @param propietario El propietario de la vivienda.
+   */
     public Vivienda(double precio, int numHabitaciones, double superficie, boolean parking, String estado, String propietario) {
         this.precio = precio;
         this.numHabitaciones = numHabitaciones;
@@ -101,4 +158,4 @@ public class Vivienda {
           System.out.println("EL propietario de la casa es: "+propietario);
           
   }
-}
+   }
