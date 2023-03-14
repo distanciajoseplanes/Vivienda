@@ -9,7 +9,7 @@ package Hogar;
  *
  * @author paqui
  */
-public class Vivienda {
+public class Vivienda { /**Este es un comentario JAVADOC en la clase VIVIENDA*/
 
     public Vivienda(double precio, int numHabitaciones, double superficie, boolean parking, String estado, String propietario) {
         this.precio = precio;
@@ -21,7 +21,8 @@ public class Vivienda {
     }
 
     /**
-     * @return the precio
+     * Este método devuelve el precio
+     * @return 
      */
     public double getPrecio() {
         return precio;
