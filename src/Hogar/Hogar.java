@@ -15,7 +15,7 @@ public class Hogar {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Vivienda v = new Vivienda(120000);
+        Vivienda casal = new Vivienda(120000);
         
         double precio;
         int numHabitaciones;
@@ -24,12 +24,16 @@ public class Hogar {
         String estado;
         String propietario;
         
-        System.out.println("Precio: " + v.precio);
-        System.out.println("Número de habitaciones: "+ v.numHabitaciones);
-        System.out.println("Superficie en m2: " + v.superficie);
-        System.out.println("¿Dispone de parking?: " + v.parking);
-        System.out.println("Estado: "+ v.estado);
-        System.out.println("Propietario: "+ v.propietario);
+        imprimirVivienda(casal);
+    }
+
+    public static void imprimirVivienda(Vivienda casal) {
+        System.out.println("Precio: " + casal.getPrecio());
+        System.out.println("Número de habitaciones: "+ casal.getNumHabitaciones());
+        System.out.println("Superficie en m2: " + casal.getSuperficie());
+        System.out.println("¿Dispone de parking?: " + casal.isParking());
+        System.out.println("Estado: "+ casal.getEstado());
+        System.out.println("Propietario: "+ casal.getPropietario());
     }
     
 }
