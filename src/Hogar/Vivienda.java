@@ -116,10 +116,13 @@ public class Vivienda {
         this.precio = precio;
     }
     
-    public void descuento(java.lang.Double precio)
-            //Descuento del 15%
+    public void actualizarPrecio()
     {
-        setPrecio(getPrecio() * 0.85);
+        descuento();
+    }
+
+    public void descuento() {
+        setPrecio(getPrecio() - getPrecio() * 0.05);
     }
     
 }
