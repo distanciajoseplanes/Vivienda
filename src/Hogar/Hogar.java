@@ -7,7 +7,7 @@ package Hogar;
 
 /**
  *
- * @author paqui
+ * @author Manuel Morales Barba
  */
 public class Hogar {
 
