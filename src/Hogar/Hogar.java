@@ -7,7 +7,7 @@ package Hogar;
 
 /**
  *
- * @author paqui
+ * @author Daniel Valverde :D
  */
 public class Hogar {
 
