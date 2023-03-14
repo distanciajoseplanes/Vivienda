@@ -21,6 +21,10 @@ public class Hogar {
         imprimirVivienda(casa1);
     }
 
+    /**
+     * 
+     * @param casa1 
+     */
     private static void imprimirVivienda(Vivienda casa1) {
         System.out.println("Precio: " + casa1.getPrecio());
         System.out.println("Número de habitaciones: "+ casa1.getNumHabitaciones());
