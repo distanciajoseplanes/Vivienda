@@ -9,7 +9,7 @@ package Hogar;
  *
  * @author paqui
  */
-public class Vivienda { /**Este es un comentario JAVADOC en la clase VIVIENDA*/
+public class Vivienda { /**Este es un comentario JAVADOC hecha en la clase VIVIENDA*/
 
     public Vivienda(double precio, int numHabitaciones, double superficie, boolean parking, String estado, String propietario) {
         this.precio = precio;
