@@ -5,10 +5,11 @@
  */
 package Hogar;
 
-/**
- *
- * @author paqui
- */
+
+ /**
+  * 
+  * @author Juan Antonio
+  */
 public class Vivienda {
 
     /**
@@ -95,12 +96,16 @@ public class Vivienda {
         this.propietario = propietario;
     }
     
+    
+ 
     public double precio;
     public int numHabitaciones;
     public double superficie;
    public boolean parking;
   public String estado;
    public String propietario;
+   
+   
     
     public Vivienda (double precio)
     {
