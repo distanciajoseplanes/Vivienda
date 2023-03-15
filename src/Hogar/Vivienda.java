@@ -12,6 +12,7 @@ package Hogar;
 public class Vivienda {
 
     /**
+     * Este parámetro te devuelve el precio de la vivienda.
      * @return the precio
      */
     public double getPrecio() {
@@ -19,13 +20,15 @@ public class Vivienda {
     }
 
     /**
-     * @param precio the precio to set
+     * Este parámetro se usa para establecer el precio de la vivienda.
+     * @param precio 
      */
     public void setPrecio(double precio) {
         this.precio = precio;
     }
 
     /**
+     * Este parámetro te devuelve el número de habitaciones.
      * @return the numHabitaciones
      */
     public int getNumHabitaciones() {
@@ -33,6 +36,7 @@ public class Vivienda {
     }
 
     /**
+     * Este parámetro se usa para establecer el número de habitaciones.
      * @param numHabitaciones the numHabitaciones to set
      */
     public void setNumHabitaciones(int numHabitaciones) {
@@ -40,6 +44,7 @@ public class Vivienda {
     }
 
     /**
+     * Este parámetro te devuelve la superficie de la vivienda en metros cuadrados.
      * @return the superficie
      */
     public double getSuperficie() {
@@ -47,6 +52,7 @@ public class Vivienda {
     }
 
     /**
+     * Este parámetro establece la superficie de la vivienda en metros cuadrados.
      * @param superficie the superficie to set
      */
     public void setSuperficie(double superficie) {
@@ -54,6 +60,7 @@ public class Vivienda {
     }
 
     /**
+     * Este parámetro te indíca si la vivienda dispone o no de parking.
      * @return the parking
      */
     public boolean isParking() {
@@ -61,6 +68,7 @@ public class Vivienda {
     }
 
     /**
+     * Este parámetro establece si la vivienda dispone o no de parking.
      * @param parking the parking to set
      */
     public void setParking(boolean parking) {
@@ -68,6 +76,7 @@ public class Vivienda {
     }
 
     /**
+     * Este parámetro te indíca el estado de la vivienda.
      * @return the estado
      */
     public String getEstado() {
@@ -75,6 +84,7 @@ public class Vivienda {
     }
 
     /**
+     * Este parámetro establece el estado de la vivienda.
      * @param estado the estado to set
      */
     public void setEstado(String estado) {
@@ -82,6 +92,7 @@ public class Vivienda {
     }
 
     /**
+     * Este parámetro te indica el nombre del propietario de la vivienda.
      * @return the propietario
      */
     public String getPropietario() {
@@ -89,6 +100,7 @@ public class Vivienda {
     }
 
     /**
+     * Este parámetro establece el nombre del propietario de la vivienda.
      * @param propietario the propietario to set
      */
     public void setPropietario(String propietario) {
@@ -101,7 +113,7 @@ public class Vivienda {
     private boolean parking;
     private String estado;
     private String propietario;
-
+    
     public Vivienda(double precio, int numHabitaciones, double superficie, boolean parking, String estado, String propietario) {
         this.precio = precio;
         this.numHabitaciones = numHabitaciones;
@@ -115,10 +127,13 @@ public class Vivienda {
     {
         this.precio = precio;
     }
+    /*
+    * Este parámetro te indica el nombre del propietario de la vivienda.
+    * @return the propietario
+    */
+    public void actualizarPrecio(double descuento) {
     
-    public void actualizarPrecio(double descuento)
-    {
-        double precioDescontado=this.precio-(this.precio*descuento/100);
+        double precioDescontado=this.getPrecio()-(this.getPrecio()*descuento/100);
         this.setPrecio(precioDescontado);
     }
     
