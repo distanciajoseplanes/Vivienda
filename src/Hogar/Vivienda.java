@@ -95,18 +95,49 @@ public class Vivienda {
         this.propietario = propietario;
     }
     
+    /**
+     * Atributo: precio de la vivienda. Tipo: double.
+     */
     private double precio;
+    /**
+     * Atributo: número de habitaciones de la vivienda. Tipo: entero.
+     */
     private int numHabitaciones;
+    /**
+     * Atributo: superficie de la vivienda. Tipo: double.
+     */
     private double superficie;
+    /**
+     * Atributo: si tiene o no parking la vivienda. Tipo: booleano.
+     */
     private boolean parking;
+    /**
+     * Atributo: estado de la vivienda. Tipo: cadena.
+     */
     private String estado;
+    /**
+     * Atributo: propietario de la vivienda. Tipo: cadena.
+     */
     private String propietario;
     
+    /**
+     * Constructor
+     * @param precio 
+     */
     public Vivienda (double precio)
     {
         this.precio = precio;
     }
 
+    /**
+     * Constructor
+     * @param precio
+     * @param numHabitaciones
+     * @param superficie
+     * @param parking
+     * @param estado
+     * @param propietario 
+     */
     public Vivienda(double precio, int numHabitaciones, double superficie, boolean parking, String estado, String propietario) {
         this.precio = precio;
         this.numHabitaciones = numHabitaciones;
@@ -116,6 +147,9 @@ public class Vivienda {
         this.propietario = propietario;
     }
     
+    /**
+     * @param descuento 
+     */
     public void actualizarPrecio(double descuento)
     {
         setPrecio(getPrecio() - (getPrecio() * descuento / 100));
