@@ -10,6 +10,15 @@ package Hogar;
  * @author paqui
  * @author Editor Juan Carlos Aguirre Tarea 04 ED
  */
+/** 
+* En este código se ha creado una instancia de Vivienda llamada casa1 
+* y se han asignado valores a todos los atributos utilizando el nuevo constructor.
+* Luego, se utilizan los métodos getters para obtener
+* los valores de los atributos y se imprimen en la consola.
+* Además, se muestra cómo utilizar el método actualizarPrecio() 
+* para aplicar un descuento del 10% al precio de la vivienda 
+* y se imprime el precio actualizado.
+ */
 public class Hogar {
 
     public static void main(String[] args) {
