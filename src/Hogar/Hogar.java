@@ -8,6 +8,7 @@ package Hogar;
 /**
  *
  * @author paqui
+ * @author Editor Juan Carlos Aguirre Tarea 04 ED
  */
 public class Hogar {
 
