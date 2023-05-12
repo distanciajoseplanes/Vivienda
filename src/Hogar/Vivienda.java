@@ -8,6 +8,7 @@ package Hogar;
 /**
  *
  * @author paqui
+ * @author Edicion Juan Carlos Aguirre Tarea 04 ED
  */
 public class Vivienda {
     
