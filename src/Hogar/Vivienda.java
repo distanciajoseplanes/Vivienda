@@ -6,27 +6,90 @@
 package Hogar;
 
 /**
- *
+ * Clase que representa una vivienda.
+ * 
  * @author paqui
  * @author Edicion Juan Carlos Aguirre Tarea 04 ED
  */
 public class Vivienda {
     
-    double precio;
-    int numHabitaciones;
-    double superficie;
-    boolean parking;
-    String estado;
-    String propietario;
+    private double precio;
+    private int numHabitaciones;
+    private double superficie;
+    private boolean parking;
+    private String estado;
+    private String propietario;
     
-    public Vivienda (double precio)
-    {
+    public Vivienda(double precio, int numHabitaciones, double superficie, boolean parking, String estado, String propietario) {
+        this.precio = precio;
+        this.numHabitaciones = numHabitaciones;
+        this.superficie = superficie;
+        this.parking = parking;
+        this.estado = estado;
+        this.propietario = propietario;
+    }
+    
+    public double getPrecio() {
+        return precio;
+    }
+    
+    public void setPrecio(double precio) {
         this.precio = precio;
     }
     
-    public void actualizarPrecio()
-    {
-        precio = precio - precio * 0.05;
+    public int getNumHabitaciones() {
+        return numHabitaciones;
+    }
+    
+    public void setNumHabitaciones(int numHabitaciones) {
+        this.numHabitaciones = numHabitaciones;
+    }
+    
+    public double getSuperficie() {
+        return superficie;
+    }
+    
+    public void setSuperficie(double superficie) {
+        this.superficie = superficie;
+    }
+    
+    public boolean tieneParking() {
+        return parking;
+    }
+    
+    public void setParking(boolean parking) {
+        this.parking = parking;
+    }
+    
+    public String getEstado() {
+        return estado;
+    }
+    
+    public void setEstado(String estado) {
+        this.estado = estado;
+    }
+    
+    public String getPropietario() {
+        return propietario;
+    }
+    
+    public void setPropietario(String propietario) {
+        this.propietario = propietario;
+    }
+    
+    public void actualizarPrecio(double descuento) {
+        double porcentajeDescuento = descuento / 100;
+        precio = precio - (precio * porcentajeDescuento);
+    }
+    
+    public void imprimirVivienda() {
+        System.out.println("Datos de la vivienda:");
+        System.out.println("Precio: " + precio);
+        System.out.println("Número de habitaciones: " + numHabitaciones);
+        System.out.println("Superficie: " + superficie);
+        System.out.println("Parking: " + parking);
+        System.out.println("Estado: " + estado);
+        System.out.println("Propietario: " + propietario);
     }
     
 }
