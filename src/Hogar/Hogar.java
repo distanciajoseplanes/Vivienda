@@ -24,12 +24,13 @@ public class Hogar {
         String estado;
         String propietario;
     }
-            public void imprimirVivienda(Vivienda casa1){
-            System.out.println("Precio: " + casa1.getPrecio());
-            System.out.println("Número de habitaciones: "+ casa1.getNumHabitaciones());
-            System.out.println("Superficie en m2: " + casa1.getSuperficie());
-            System.out.println("¿Dispone de parking?: " + casa1.isParking());
-            System.out.println("Estado: "+ casa1.getEstado());
-            System.out.println("Propietario: "+ casa1.getPropietario());
-        }
+    
+    public void imprimirVivienda(Vivienda casa1){
+        System.out.println("Precio: " + casa1.getPrecio());
+        System.out.println("Número de habitaciones: "+ casa1.getNumHabitaciones());
+        System.out.println("Superficie en m2: " + casa1.getSuperficie());
+        System.out.println("¿Dispone de parking?: " + casa1.isParking());
+        System.out.println("Estado: "+ casa1.getEstado());
+        System.out.println("Propietario: "+ casa1.getPropietario());
+    }
 }
