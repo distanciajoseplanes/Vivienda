@@ -34,3 +34,4 @@ public class Hogar {
         System.out.println("Propietario: "+ casa1.getPropietario());
     }
 }
+
