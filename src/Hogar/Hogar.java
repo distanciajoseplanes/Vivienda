@@ -11,11 +11,20 @@ package Hogar;
  */
 public class Hogar {
 
+    private static void imprimirVivienda(Vivienda casa)
+    {   
+        System.out.println("Precio: " + casa.getPrecio());
+        System.out.println("Número de habitaciones: "+ casa.getNumHabitaciones());
+        System.out.println("Superficie en m2: " + casa.getSuperficie());
+        System.out.println("¿Dispone de parking?: " + casa.isParking());
+        System.out.println("Estado: "+ casa.getEstado());
+        System.out.println("Propietario: "+ casa.getPropietario());
+    }
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Vivienda v = new Vivienda(120000);
+        Vivienda casa1 = new Vivienda(120000);
         
         double precio;
         int numHabitaciones;
@@ -24,12 +33,7 @@ public class Hogar {
         String estado;
         String propietario;
         
-        System.out.println("Precio: " + v.precio);
-        System.out.println("Número de habitaciones: "+ v.numHabitaciones);
-        System.out.println("Superficie en m2: " + v.superficie);
-        System.out.println("¿Dispone de parking?: " + v.parking);
-        System.out.println("Estado: "+ v.estado);
-        System.out.println("Propietario: "+ v.propietario);
+        imprimirVivienda(casa1);
     }
     
 }
