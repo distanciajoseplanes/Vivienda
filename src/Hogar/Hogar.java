@@ -6,16 +6,23 @@
 package Hogar;
 
 /**
- *
- * @author paqui
+ *<h2>Clase Hogar</h2>
+ * Es una clase que contiene el método main, en ella se crea un objeto
+ * de tipo Vivienda y se muestra por pantalla el valor de sus atributos.
+ * @see Vivienda
+ * @author Jose Antonio Cano
+ * @version 1.0
+ * @since 1.0
  */
 public class Hogar {
 
     /**
-     * @param args the command line arguments
+     * Este método se encarga de iniciar la ejecución del programa
+     * Este es el método principal del proyecto
+     * @param args Array tipo cadena
      */
     public static void main(String[] args) {
-        Vivienda v = new Vivienda(120000);
+        Vivienda casa1 = new Vivienda(120000);
         
         double precio;
         int numHabitaciones;
@@ -24,12 +31,13 @@ public class Hogar {
         String estado;
         String propietario;
         
-        System.out.println("Precio: " + v.precio);
-        System.out.println("Número de habitaciones: "+ v.numHabitaciones);
-        System.out.println("Superficie en m2: " + v.superficie);
-        System.out.println("¿Dispone de parking?: " + v.parking);
-        System.out.println("Estado: "+ v.estado);
-        System.out.println("Propietario: "+ v.propietario);
+        System.out.println("Precio: " + casa1.getPrecio());
+        System.out.println("Número de habitaciones: "+ casa1.getNumHabitaciones());
+        System.out.println("Superficie en m2: " + casa1.getSuperficie());
+        System.out.println("¿Dispone de parking?: " + casa1.isParking());
+        System.out.println("Estado: "+ casa1.getEstado());
+        System.out.println("Propietario: "+ casa1.getPropietario());
+        
     }
     
 }
