@@ -4,20 +4,29 @@
  * and open the template in the editor.
  */
 package Hogar;
-
 /**
- *
+ * Clase que representa una vivienda.
+ * 
+ * Esta clase contiene atributos y métodos relacionados con una vivienda, como el precio, el número de habitaciones, la superficie, etc.
+ * 
  * @author paqui
  */
 public class Vivienda {
     
+    /** Precio de la vivienda */
     private double precio;
+    /** Número de habitaciones de la vivienda */
     private int numHabitaciones;
+    /** Superficie de la vivienda en metros cuadrados */
     private double superficie;
+    /** Indica si la vivienda tiene parking */
     private boolean parking;
+    /** Estado de la vivienda */
     private String estado;
-    private String propietario;
+    /** Nombre del propietario de la vivienda */
+    private String propietario; 
     
+    /** Constructor que recibe todos los parámetros */
     public Vivienda (double precio, int numHabitaciones, double superficie, boolean parking, String estado, String propietario)
     {
         this.precio = precio;
@@ -28,7 +37,7 @@ public class Vivienda {
         this.propietario = propietario;
     }
     
-    
+    /** Método que actualiza el precio de la vivienda aplicando un descuento */
     public void actualizarPrecio(double descuento)
     {
         precio = precio - precio * (descuento / 100);
@@ -41,8 +50,7 @@ public class Vivienda {
     public void setPrecio(double precio){
         this.precio = precio;
     }
-    
-    public int getNumHabitaciones() {
+        public int getNumHabitaciones() {
         return numHabitaciones;
     }
     
