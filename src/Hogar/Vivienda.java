@@ -10,7 +10,6 @@ package Hogar;
  * @author paqui
  */
 public class Vivienda {
-    
     private double precio;
     private int numHabitaciones;
     private double superficie;
@@ -18,6 +17,15 @@ public class Vivienda {
     private String estado;
     private String propietario;
 
+    /**
+     * 
+     * @param precio
+     * @param numHabitaciones
+     * @param superficie
+     * @param parking
+     * @param estado
+     * @param propietario 
+     */
     public Vivienda(double precio, int numHabitaciones, double superficie, boolean parking, String estado, String propietario) {
         this.precio = precio;
         this.numHabitaciones = numHabitaciones;
@@ -28,97 +36,103 @@ public class Vivienda {
     }
 
     /**
-     * @return the precio
+     * @return precio
      */
     public double getPrecio() {
         return precio;
     }
 
     /**
-     * @param precio the precio to set
+     * @param precio será el nuevo precio
      */
     public void setPrecio(double precio) {
         this.precio = precio;
     }
 
     /**
-     * @return the numHabitaciones
+     * @return el número de habitaciones
      */
     public int getNumHabitaciones() {
         return numHabitaciones;
     }
 
     /**
-     * @param numHabitaciones the numHabitaciones to set
+     * @param numHabitaciones el nuevo número de habitaciones
      */
     public void setNumHabitaciones(int numHabitaciones) {
         this.numHabitaciones = numHabitaciones;
     }
 
     /**
-     * @return the superficie
+     * @return la superficie
      */
     public double getSuperficie() {
         return superficie;
     }
 
     /**
-     * @param superficie the superficie to set
+     * @param superficie la nueva superficie
      */
     public void setSuperficie(double superficie) {
         this.superficie = superficie;
     }
 
     /**
-     * @return the parking
+     * @return si hay parking
      */
     public boolean isParking() {
         return parking;
     }
 
     /**
-     * @param parking the parking to set
+     * @param parking actualiza si hay no parking
      */
     public void setParking(boolean parking) {
         this.parking = parking;
     }
 
     /**
-     * @return the estado
+     * @return el estado
      */
     public String getEstado() {
         return estado;
     }
 
     /**
-     * @param estado the estado to set
+     * @param estado la condición del estado
      */
     public void setEstado(String estado) {
         this.estado = estado;
     }
 
     /**
-     * @return the propietario
+     * @return el propietario
      */
     public String getPropietario() {
         return propietario;
     }
 
     /**
-     * @param propietario the propietario to set
+     * @param propietario cambia el propietario
      */
     public void setPropietario(String propietario) {
         this.propietario = propietario;
     }
-    
+    /**
+     * 
+     * @param precio constructor sólo con preecio
+     */
     public Vivienda (double precio)
     {
         this.precio = precio;
     }
-    
+    /**
+     * 
+     * @param descuento el porcentaje de descuento a aplicar
+     */
     public void actualizarPrecio(double descuento)
     {
-        setPrecio(getPrecio() - getPrecio() * 0.05);
+        setPrecio(getPrecio() - getPrecio() * descuento);
     }
     
 }
